@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rhethim — Photography</title>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Syne:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" id="hero">
+  <div class="scene3d" id="scene3d">
+    <img class="bg" id="bg" alt="Rhethim on a metro platform">
+    <div class="shade"></div>
+    <h1 class="title" id="title">Light is my favourite subject</h1>
+    <p class="tag" id="tag">Night, fog and street photography by Rhethim</p>
+  </div>
+</header>
+<main>
+  <section class="skills">
+    <h2>What my camera is good at</h2>
+    <div class="cards">
+      <article class="card"><h3>Reading light</h3><p>Streetlamps, flames, fog, the first sun through the trees. My best frames let the light do most of the work.</p></article>
+      <article class="card"><h3>Finding texture</h3><p>Raw concrete, peeling paint, wet stone floors. Old walls and tired buildings get as much of my attention as faces.</p></article>
+      <article class="card"><h3>Waiting for the moment</h3><p>A river aarti at dusk, an empty alley at night, a walkway over loud water. I wait for the frame, then press the shutter.</p></article>
+    </div>
+  </section>
+  <section class="ringsec" id="ringsec">
+    <h2>Eleven frames</h2>
+    <p class="lead">Drag the ring, or just scroll. Tap any photo to open it.</p>
+    <div class="stage" id="stage"><div class="ringwrap" id="ringwrap"><div class="ring" id="ring"></div></div></div>
+    <p class="cap" id="cap"></p>
+  </section>
+</main>
+<footer>Built by Rhethim Das and shot by Rhethim only.</footer>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-b lb-x" id="lbx" aria-label="Close photo">&times;</button>
+  <button class="lb-b lb-p" id="lbp" aria-label="Previous photo">&lsaquo;</button>
+  <figure class="lb-f"><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="lb-b lb-n" id="lbn" aria-label="Next photo">&rsaquo;</button>
+</div>
+<script src="images.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
